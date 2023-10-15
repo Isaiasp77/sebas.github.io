@@ -42,7 +42,7 @@ while intentos > 0:
               cont +=1
               incorrectas.append(letra_ingresada)
               intentos -=1
-              if intentos == 5:
+    if intentos == 5:
                      print("""
                             ------
                             0    |
@@ -51,7 +51,7 @@ while intentos > 0:
                            ------------
                            """)
                      
-              elif intentos == 4:
+    elif intentos == 4:
                      print("""
                             ------
                             0    |
@@ -59,7 +59,7 @@ while intentos > 0:
                                  |
                            ------------
                            """)
-              elif intentos == 3:
+    elif intentos == 3:
                      print("""
                             ------
                             0    |
@@ -67,6 +67,31 @@ while intentos > 0:
                                  |
                            ------------
                            """)
+    elif intentos == 2:
+                     print("""
+                            ------  
+                            0    |
+                          / | \  |
+                                 |
+                           ------------
+                     """)
+    elif intentos == 1:
+                     print("""
+                            ------  
+                            0    |
+                          / | \  |
+                           /     |
+                           ------------
+                           """)
+    elif intentos == 0 :
+                     print("""
+                            ------  
+                            0    |
+                          / | \  |
+                           / \   |
+                           ------------
+                     """)
+
     print(palabra_oculta)
 if palabra_oculta == palabra:
         print(f'Ganaste la palabra es {palabra_oculta}')
