@@ -13,7 +13,7 @@
 import random
 palabras = ["messi","auto","boca","piso","celular"]
 palabra = list(random.choice(palabras))#elejimos la palabra
-palabra_oculta = ['_']*len(palabra)
+palabra_oculta = ['?']*len(palabra)
 intentos = 6
 correctas = []
 incorrectas = []
@@ -25,6 +25,7 @@ while intentos > 0:
     letra_ingresada= input(f"ingrese una letra para adivinar la plabra tienes {intentos} o ingrese 1 para adivinar la palabra:\n")
     if letra_ingresada == '1':
          palabra_oculta = list(input('Arriesga la palabra:\n'))
+         intentos = 0
     ind = 0
     for letra in palabra:
         if letra == letra_ingresada:
@@ -36,8 +37,11 @@ while intentos > 0:
     intentos -=1
     print(palabra_oculta)
 if palabra_oculta == palabra:
-        intentos -= 5
         print(f'Ganaste la palabra es {palabra_oculta}')
+        print(f'letras correctas ingresadas: {correctas}')
+        print(f'letas incorrectas ingresadas: {incorrectas}')
         
 else:
         print(f'Perdiste la palabra es {palabra}')
+        print(f'letras correctas ingresadas: {correctas}')
+        print(f'letas incorrectas ingresadas: {incorrectas}')
