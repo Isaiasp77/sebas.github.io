@@ -27,14 +27,46 @@ while intentos > 0:
          palabra_oculta = list(input('Arriesga la palabra:\n'))
          intentos = 0
     ind = 0
+    existe_letra = False
     for letra in palabra:
         if letra == letra_ingresada:
+            existe_letra = True
             palabra_oculta[ind] = letra_ingresada
-            correctas.append(letra_ingresada)
-        ind +=1   
+        ind +=1
+        cont = 0
+    if  existe_letra:
+              correctas.append(letra_ingresada)
+              if palabra_oculta== palabra:
+                     intentos =0
     else:
-        incorrectas.append(letra_ingresada)
-    intentos -=1
+              cont +=1
+              incorrectas.append(letra_ingresada)
+              intentos -=1
+              if intentos == 5:
+                     print("""
+                            ------
+                            0    |
+                                 |
+                                 |
+                           ------------
+                           """)
+                     
+              elif intentos == 4:
+                     print("""
+                            ------
+                            0    |
+                            |    |
+                                 |
+                           ------------
+                           """)
+              elif intentos == 3:
+                     print("""
+                            ------
+                            0    |
+                            | \  |
+                                 |
+                           ------------
+                           """)
     print(palabra_oculta)
 if palabra_oculta == palabra:
         print(f'Ganaste la palabra es {palabra_oculta}')
