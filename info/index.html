@@ -1,1 +1,182 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icono" href="./info/icono">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+<body class="scroll">
+    <header class="encabezado">
+        <nav class="navegacion">
+            <a class= "nav__enlaces" href="#presentacion">
+                <h2 class="nav__titulo">Mis Cosas</h2>
+            </a>
+            <ul class="enlaces">
+                <li class="enlaces-item">
+                    <a class="enlaces-enlace" href="#presentacion">Presentacion</a>
+                </li>
+                <li class="enlaces-item">
+                    <a class="enlaces-enlace" href="#sobre-mi">Sobre Mi</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="principal">
+        <section class="presentacion" id="presentacion">
+            <div class="presentacion_contenedor">
+                <h1 class="presentacion_titulo">Convirtiendome en desarrollador</h1>
+                <p class="presentacion_parrafo">
+                  Este es mi porfolio donde estoy intentando usar los conocimientos recibidos por el Informatorio
+                   para convertirme en progrmador web.
+                </p>
+            
+            <div class="presentacion_botones">
+                <a href="#sobre-mi" class="boton" role="button">Sobre mi</a>
+                <a href="docs/cv.docx" target="_blank" class="boton boton__oscuro" role="button">Descargar cv</a>
+            </div>
+        </div>
+        </section>
+        <!--escribimos sobre nuestra historia personal-->
+        <article class="articulo sobre-mi" id="sobre-mi" >
+            <h2 class="articulo__titulo">Un poco sobre mi</h2>
+            <div class="articulo_contenedor_descripcion">
+            <section class="seccion__descripcion">
+                <div class="seccion__porta-retrato">
+                    <img class="seccion_imgen"src="imagenes/trabajando.jpg" alt="foto trabajando" title="Trabajando en la oficina">
+                </div>
+            </div>
+                <div class="seccion_descripcion__info scroll scroll_fino scroll_gris" aria-label="descripcion personal">
+                    <h3 class="seccion_descripcion__titulo" id="mi_historia_titulo">
+                        Mi historia
+                      </h3>
+                      <p class="seccion__descripcion__parrafo" aria-label="Detalles de mi historia" aria-labelledby="mi_historia-titulo">
+                        Mi nombre es sebastian, tengo 28 años. Me recibi de un colegio técnico que se especializa en aviones,
+                        terminando el colegio me inscribí en la facultad donde no logre terminar por falta de dinero
+                        entonces tube que trabajar. Despues de 5 años con el informatorio recién volvi a mis estudios
+                        falle varias veces en el informatorio pero hasta el año pasado que avance a la etapa 3 jamas me habia emociando tanto 
+                        hasta que cambiaron el sistema de estudio y la verdad que me  gusta más el nuevo método de enseñanza.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A, suscipit. Eius numquam possimus veniam odit nam cupiditate maiores voluptate ut beatae officiis? Optio est quisquam unde aspernatur eum pariatur labore?
+                      </p>
+                </div>
 
+            </section>
+        </article>
+        <!--explicacion de los proyectos que tenego. podemos ir agregando luego los proyectos si  no tenemos ninguno por el momento-->
+        <article class="ariticulo_proyectos" id="proyectos">
+            <h2 class="articulo_titulo">Proyectos</h2>
+            <div class="contenedor_tarjetas">
+                <article class="tarjeta" aria-label="presentacion de proyecto personal">
+                    <img class="tarjeta__imagen" src="imagenes/juego.png" alt="imagen del proyecto" title="juego ahorcado">
+                    <div class="tarjeta_contenido">
+                        <h3 class="tarjeta__titulo" id="titulo_proyecto_1">juego del ahorcado</h3>
+                        <span class="tarjeta_divisor"></span>
+                        <p  class="tarjeta__parrafo scroll scroll_fino"
+                        aria-label="descripcion de proyecto personal"
+                        aria-describedby="titulo_proyecto_1">Es el juego del ahorcado hecho con python en la etapa 2 del informatorio.
+                    Es puro codigo fuente se juega desde la consola, no tiene animacion
+                    se encuentra en carpeta info/juego de ahorcado</p>
+                    <a href="https://github.com/PROSebas12/info.git" class="boton boton__oscuro" target="_blank">Ver Proyecto</a>
+                    
+                    </div>
+                </article>
+                <article class="tarjeta" aria-label="presentacion de proyecto personal">
+                    <img class="tarjeta__imagen" src="imagenes/proyec.png" alt="imagen del proyecto" title="solo una imagen">
+                    <div class="tarjeta_contenido">
+                        <h3 class="tarjeta__titulo" id="titulo_proyecto_1">Hobbie</h3>
+                        <span class="tarjeta_divisor"></span>
+                        <p  class="tarjeta__parrafo scroll scroll_fino"
+                        aria-label="descripcion de proyecto personal"
+                        aria-describedby="titulo_proyecto_1">Es el juego del ahorcado hecho con python en la etapa 2 del informatorio.
+                    Es puro codigo fuente se juega desde la consola, no tiene animacion
+                    se encuentra en carpeta info/juego de ahorcado
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam nisi quia eligendi labore officia placeat 
+                    nesciunt eius tempora. Nesciunt, modi. Repellendus eaque itaque modi necessitatibus est doloribus quo?
+                     Inventore, voluptatibus!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, id quam quo esse voluptatibus adipisci.
+                     Ab aut laborum, tempore tempora vitae obcaecati dolor optio molestias sequi necessitatibus, magni suscipit mollitia?</p>
+                    <a href="https://github.com/PROSebas12/info.git" class="boton boton__oscuro" target="_blank">Ver Proyecto</a>
+                    
+                    </div>
+                </article>
+                
+            </div>
+        </article>
+    </main>
+        <footer class="pie-de-pagina" role="contentinfo">
+            <div class="pie-de-pagina-columna">
+                <h4 class="pie-de-pagina-titulo-columna">Mis Redes</h4>
+                <ul class="enlaces enlaces-columna">
+                    <li class="enlaces-item">
+                        <a href="https://www.facebook.com/sebastian.pereyra.31586/"
+                        class="enlaces-enlace enlaces-enlace-footer"
+                        target="_blank">
+                        <img 
+                            class="enlaces-icono"
+                            src="imagenes/logof.png" 
+                            alt="logo de facebook"
+                            title="Facebook">
+                        </a>
+                    </li>
+                    <li class="enlaces-item">
+                        <a href="https://github.com/Isaiasp77/mi-p-gina" 
+                        class="enlaces-enlace enlaces-enlace-footer"
+                        target="_blank">
+                        <img 
+                            class="enlaces-icono" 
+                            src="imagenes/logo git.png" 
+                            alt="logo de github"
+                            title="GitHub">
+                        </a>
+                    </li>
+                    <li class="enlaces-item">
+                        <a 
+                            class="enlaces-enlace enlaces-enlace-footer" 
+                            href="https://www.instagram.com/"
+                            target="_blank">
+                            <img 
+                                class="enlaces-icono" 
+                                src="logos/logo instagram.jpg" 
+                                alt="logo de instagram"
+                                title="Instagram">
+                       </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pie-de-pagina-columna">
+                <h4 class="pie-de-pagina-titulo-columna">Contactame</h4>
+                <ul class="enlace enlace-vertical">
+                    <li class="enlaces-item">
+                        <a 
+                            class="enlaces-enlace enlaces-enlace-footer" 
+                            href="https://mail.google.com/mail/u/0/#inbox">Email
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pie-de-pagina-columna" role="navigation">
+                <h4 class="pie-de-pagina-titulo-columna">Secceiones</h4>
+                    <ul class="enlace enlace-vertical">
+                        <li class="enlaces-item">
+                            <a 
+                                class="enlaces enlaces-enlace-footer"
+                                href="#presentacion"
+                                >Inicio</a>
+                        </li>
+                        <li class="enlaces-item">
+                            <a 
+                                class="enlaces enlaces-enlace-footer" 
+                                href="#sobre-mi">Sobre mi</a>
+                        </li>
+                    </ul>
+                 </div>
+                 <div class="pie-de-pagina-copyright">
+                    <p>Copyright 2024</p>
+                 </div>
+        </footer> 
+</body>
+</html>
